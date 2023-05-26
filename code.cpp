@@ -55,7 +55,7 @@ void store::menu(){
             admin();
         }
         else{
-            cout << "Incorrect email/password. Please try again\n";
+            cout << "Incorrect username/password. Please try again\n";
         }
         break;
 
