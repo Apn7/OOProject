@@ -1,0 +1,10 @@
+ 1 Napa 500mg 9/2024 1.2 10
+ 2 Fexo 180mg 12/2024 9 5
+ 3 Maxpro 40mg 5/2025 9 15
+ 4 Sergel 40mg 5/2024 10 10
+ 6 Ritalin 10mg 6/2024 100 5
+ 7 Avolac 100ml 6/2025 160 5
+ 8 Melphin 10ml 6/2025 16 0
+ 9 Cal 250mg 6/2026 5 0
+ 10 Filwel 1x30 3/2026 300 5
+ 5 Tushka 100ml 9/2025 77.62 5
