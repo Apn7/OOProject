@@ -1,5 +1,3 @@
-Certainly! Here's the README file with the provided information formatted in Markdown:
-
 # Pharmacy Management System
 
 The Pharmacy Management System is a C++ program that allows users to manage drugs in a pharmacy store. It provides functionality for both administrators and buyers to perform various operations such as adding drugs, modifying drugs, deleting drugs, viewing drug lists, and generating receipts.
