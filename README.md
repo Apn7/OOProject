@@ -4,7 +4,7 @@ The Pharmacy Management System is a C++ program that allows users to manage drug
 
 ## Features
 
-- **Admin Menu**: Administrators can access the admin menu to perform administrative tasks.
+- **Admin Menu**: Administrators can access the admin menu to perform administrative tasks. Admin username: Apn7 , password: 1234.
 - **Buyer Menu**: Buyers can access the buyer menu to view drugs and generate a receipt for their purchases.
 - **Add Drug**: Administrators can add a new drug to the system by providing details such as drug ID, name, strength/volume, cost, discount, and expiry date.
 - **Modify Drug**: Administrators can modify existing drug records by searching for a drug ID and updating its details.
