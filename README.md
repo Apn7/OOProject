@@ -43,5 +43,7 @@ This program is a simple implementation of a pharmacy management system and may 
 The Pharmacy Management System code was written by, 
 
 Ekramul Alam
+
 Roll: 2007071
+
 CSE, KUET
