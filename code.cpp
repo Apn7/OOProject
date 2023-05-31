@@ -3,7 +3,7 @@ using namespace std;
 
 
 class store{
-private:
+protected:
     int drugid;
     float price;
     float dis;
@@ -13,17 +13,28 @@ private:
 
 public:
     void menu();
+};
+
+class Admin : public store {
+public:
     void admin();
-    void buyer();
     void add();
     void edit();
     void rem();
+};
+
+class Buyer : public store {
+public:
+    void buyer();
     void lst();
     void receipt();
 };
 
+
 void store::menu(){
     a:
+    Admin a;
+    Buyer c;
     int choice;
     string email;
     string pass;
@@ -52,7 +63,7 @@ void store::menu(){
         cout <<"\t\t\t\t Enter your password : ";
         cin >> pass;
         if (email=="Apn7" && pass=="1234"){
-            admin();
+            a.admin();
         }
         else{
             cout << "Incorrect username/password. Please try again\n";
@@ -60,7 +71,7 @@ void store::menu(){
         break;
 
         case 2:
-        buyer();
+        c.buyer();
         break;
 
         case 3:
@@ -73,7 +84,7 @@ void store::menu(){
     goto a;
 }
 
-void store::admin(){
+void Admin::admin(){
     a:
     int choice;
     cout <<"\n\n\n\t\t\t\t Admin Menu\n";
@@ -114,7 +125,7 @@ void store::admin(){
     goto a;
 }
 
-void store:: buyer(){
+void Buyer:: buyer(){
     a:
     int choice;
     cout <<"\n\n\n\t\t\t\t Buyer Menu\n";
@@ -141,7 +152,7 @@ void store:: buyer(){
     goto a;
 }
 
-void store::add(){
+void Admin::add(){
     a:
     fstream data;
     int cnt = 0;
@@ -192,7 +203,7 @@ void store::add(){
     cout <<"\n\n\t\t Record Updated! ";
 }
 
-void store :: edit(){
+void Admin :: edit(){
     a:
     fstream data,tdata;
     int cnt = 0;
@@ -249,7 +260,7 @@ void store :: edit(){
     }
 }
 
-void store::rem(){
+void Admin::rem(){
     a:
      fstream data,tdata;
      int di;
@@ -285,7 +296,7 @@ void store::rem(){
      }
 }
 
-void store::lst(){
+void Buyer::lst(){
     fstream data;
     data.open("drugs.txt",ios::in);
     cout <<string(120, '-') << endl;
@@ -297,7 +308,7 @@ void store::lst(){
     data.close();
 }
 
-void store::receipt(){
+void Buyer::receipt(){
     fstream data;
     vector <int> c;
     vector <int> q;
